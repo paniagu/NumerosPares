@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumerosPares.Kevin"
+             Title="Kevin">
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Label Text="Ingrese la cantidad de dinero mexicano para hacer la converción"
+                   FontAttributes="Bold"
+                   TextColor="RosyBrown"
+                   FontSize="Large">
+            </Label>
+            <Entry Placeholder="Ingrese la cantidad..."
+                   x:Name="mx"></Entry>
+            <Button Text="Convertir"
+                    Background="Aqua"
+                    TextColor="Black"
+                    x:Name="Convertir"
+                    Clicked="Convertir_Clicked"
+                    FontSize="Large"></Button>
+
+            <Label Text="   "
+                   x:Name="resultado"
+                   FontAttributes="Bold"
+                   TextColor="GreenYellow"
+                   FontSize="Large"></Label>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
